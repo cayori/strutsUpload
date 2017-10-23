@@ -15,7 +15,7 @@ public class multiUploadArrayAction extends ActionSupport {
 	public String upload() throws Exception {
 		for(int i=0; i<uploads.length; i++) {
 			File destFile = new File(fileUploadPath + uploadsFileName[i]);
-			FileUtils.copyFile(uploads[i], destFile);		// getUploads(i).get(i) 써야하나?
+			FileUtils.copyFile(uploads[i], destFile);
 		}
 		return SUCCESS;
 	}
